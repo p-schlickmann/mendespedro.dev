@@ -14,8 +14,8 @@ const Header = () => {
     useEffect(() => {
         function handleClickOutside(event) {
             if (
-                wrapperRef.current && !wrapperRef.current.contains(event.target)
-                && triggerRef.current && !triggerRef.current.contains(event.target)
+                (wrapperRef.current && !wrapperRef.current.contains(event.target))
+                || (triggerRef.current && !triggerRef.current.contains(event.target))
             ) {
                 if (isMobileMenuOpen) {
                     setMobileMenuOpen(false)
