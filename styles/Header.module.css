@@ -1,0 +1,92 @@
+.container {
+    background-color: var(--green-dark);
+    padding: 1rem 4.166%;
+}
+
+.desktopContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    margin-top: -5px;
+}
+
+.buttonsContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logoText {
+    font-family: Prokyon, serif;
+    font-size: 35px;
+    color: var(--white);
+}
+
+.logoComplement {
+    font-family: Roboto, serif;
+    color: var(--green-light);
+    font-size: 13px;
+    margin-left: 18px;
+}
+
+.headerButton {
+    color: var(--white);
+    font-family: Roboto, serif;
+    font-size: 13px;
+    margin: 0 15px;
+}
+
+.headerButton:hover {
+    color: var(--green-light-complement)
+}
+
+.menuButtonContainer {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menuIcon {
+    font-size: 20px;
+}
+
+.mobileMenu {
+    display: none;
+}
+
+.mobileMenuItem {
+    border-top: 1px solid var(--green-border);
+    padding: 19px 0;
+    cursor: pointer;
+}
+
+.mobileMenuText {
+    font-family: Roboto, serif;
+    font-size: 13px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.mobileMenuItem:hover .mobileMenuText{
+    color: var(--green-light-complement);
+}
+
+@media (max-width: 768px) {
+    .menuButtonContainer {
+        display: initial;
+    }
+    .mobileMenu {
+        display: initial;
+    }
+    .buttonsContainer {
+        display: none;
+    }
+    .container {
+        padding: 1rem 10px;
+    }
+}
