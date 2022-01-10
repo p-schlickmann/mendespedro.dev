@@ -17,9 +17,7 @@ const Header = () => {
                 return
             }
             if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
-                if (isMobileMenuOpen) {
-                    setMobileMenuOpen(false)
-                }
+                setMobileMenuOpen(false)
             }
         }
 

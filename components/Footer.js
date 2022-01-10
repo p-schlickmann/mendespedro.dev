@@ -6,12 +6,14 @@ const Footer = () => {
         <footer className={styles.footer}>
             <div className={styles.container}>
                 <div className={styles.credits}>
-                    <a href={'/'} className={'logoText'}>
-                        pedro
-                    </a>
+                    <Link href={'/'}>
+                        <a  className={'logoText'}>
+                            pedro
+                        </a>
+                    </Link>
                     <div>
                         <span className={styles.miniHeader}>Hosting by</span>
-                        <a className={styles.vercel}/>
+                        <a href={'https://vercel.com'} className={styles.vercel}/>
                     </div>
                     <div className={styles.designContainer}>
                         <span className={styles.miniHeader}>Design by</span>
