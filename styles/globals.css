@@ -10,7 +10,7 @@
   font-family: "Roboto";
   src: url("/fonts/Roboto-Medium.ttf");
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-display: swap;
 }
 
@@ -18,9 +18,18 @@
   font-family: "RobotoLight";
   src: url("/fonts/Roboto-Light.ttf");
   font-style: normal;
-  font-weight: 600;
+  font-weight: 300;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "RobotoBold";
+  src: url("/fonts/Roboto-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
 
 :root {
   --green-dark: #0C4B33;

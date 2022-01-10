@@ -1,11 +1,45 @@
-
-
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+}
+
+.copyBanner {
+  font-family: RobotoLight, serif;
+  font-weight: normal;
+  line-height: 1.3;
+  padding: 50px 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+}
+
+.copyBanner p {
+  max-width: 700px;
+  margin: 2.3rem auto 1.1rem;
+}
+
+.copyBanner em {
+  color: var(--text);
+  font-size: 36px;
+  font-style: normal;
+  width: 100%;
+  text-align: center;
+}
+
+.bannerText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bannerButton {
+  font-family: RobotoBold, serif;
+  display: inline-block;
+  padding: 1.1rem 50px 1.0rem;
+  margin-bottom: 40px;
+  background: var(--green-light);
+  color: var(--white);
+  border: 0;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 18px;
 }
