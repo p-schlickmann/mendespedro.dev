@@ -13,10 +13,10 @@ const Header = () => {
 
     useEffect(() => {
         function handleClickOutside(event) {
-            if (
-                (wrapperRef.current && !wrapperRef.current.contains(event.target))
-                || (triggerRef.current && !triggerRef.current.contains(event.target))
-            ) {
+            if (triggerRef.current && triggerRef.current.contains(event.target)) {
+                return
+            }
+            if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
                 if (isMobileMenuOpen) {
                     setMobileMenuOpen(false)
                 }
@@ -35,7 +35,7 @@ const Header = () => {
         <div className={styles.container}>
             <div className={styles.desktopContainer}>
                 <div className={styles.logoContainer}>
-                    <a href={'/'} className={styles.logoText}>
+                    <a href={'/'} className={'logoText'}>
                         pedro
                     </a>
                     <span className={styles.logoComplement}>
@@ -46,10 +46,10 @@ const Header = () => {
                     <FontAwesomeIcon icon={faBars} color={'white'} className={styles.menuIcon}/>
                 </div>
                 <div className={styles.buttonsContainer}>
-                    <a href={'#about'} className={styles.headerButton}>ABOUT</a>
-                    <a className={styles.headerButton}>WORK</a>
-                    <a className={styles.headerButton}>PROJECTS</a>
-                    <a className={styles.headerButton}>CONTACT</a>
+                    <a href={'#about'}>ABOUT</a>
+                    <a href={'#work'}>WORK</a>
+                    <a href={'#projects'}>PROJECTS</a>
+                    <a href={'#contact'}>CONTACT</a>
                 </div>
             </div>
             <div ref={wrapperRef} style={{display: isMobileMenuOpen ? 'initial' : 'none'}} className={styles.mobileMenu}>
@@ -67,7 +67,6 @@ const Header = () => {
                     <a className={styles.mobileMenuText}>CONTACT</a>
                 </div>
             </div>
-
         </div>
         )
 }

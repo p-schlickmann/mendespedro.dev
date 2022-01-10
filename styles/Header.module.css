@@ -21,10 +21,16 @@
     align-items: center;
 }
 
-.logoText {
-    font-family: Prokyon, serif;
-    font-size: 35px;
+.buttonsContainer a {
     color: var(--white);
+    font-family: Roboto, serif;
+    font-size: 13px;
+    margin: 0 15px;
+}
+
+.buttonsContainer a:hover {
+    color: var(--green-light-complement)
+
 }
 
 .logoComplement {
@@ -34,16 +40,6 @@
     margin-left: 18px;
 }
 
-.headerButton {
-    color: var(--white);
-    font-family: Roboto, serif;
-    font-size: 13px;
-    margin: 0 15px;
-}
-
-.headerButton:hover {
-    color: var(--green-light-complement)
-}
 
 .menuButtonContainer {
     display: none;

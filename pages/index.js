@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -9,11 +10,13 @@ export default function Home() {
           <Head>
         <title>Mendes Pedro</title>
         <meta name="description" content="The web developer for perfectionists with deadlines." />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
           <Header/>
-          <main className={styles.main}></main>
-          <footer className={styles.footer}></footer>
+          <main className={styles.main}>
+
+          </main>
+          <Footer/>
       </div>
   )
 }

@@ -14,8 +14,18 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "RobotoLight";
+  src: url("/fonts/Roboto-Light.ttf");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
 :root {
   --green-dark: #0C4B33;
+  --green-dark-header: #113229;
+  --green-dark-footer: #2B8C67;
   --green: #20AA76;
   --green-light: #44B78B;
   --green-light-complement: #C9F0DD;
@@ -40,5 +50,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.logoText {
+  font-family: Prokyon, serif;
+  font-size: 35px;
+  color: var(--white);
+}
+
 
 
