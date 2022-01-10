@@ -17,11 +17,11 @@ export default function Home() {
               <div className={styles.copyBanner}>
                   <p className={styles.bannerText}>
                       <em>
-                          Django My name is Pedro Mendes, and this website is currently under development.
+                          My name is Pedro Mendes, and this website is currently under development.
                       </em>
                   </p>
                   <p>
-                      <a className={styles.bannerButton}>Contact Me</a>
+                      <a href={'https://github.com/p-schlickmann'} className={styles.bannerButton}>Github profile</a>
                   </p>
               </div>
           </main>
