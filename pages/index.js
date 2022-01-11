@@ -31,14 +31,14 @@ export default function Home() {
               <div className={styles.copyBanner}>
                   <p className={styles.bannerText}>
                       <em>
-                          My name is Pedro Mendes, and this website is currently under development.
+                          My name is Pedro Mendes and I build <br/> things for the web, with Django.
                       </em>
                   </p>
                   <p>
-                      <a href={''} className={styles.bannerButton}>I'll write something here</a>
+                      <a href={'#about'} className={styles.bannerButton}>See my other top skills</a>
                   </p>
               </div>
-              <div className={styles.secondaryContainer}>
+              <div className={styles.secondaryContainer} id={'about'}>
                   <div className={styles.left}>
                       <h1 className={styles.secondaryHeader}>About me</h1>
                       <p>
@@ -60,7 +60,7 @@ export default function Home() {
                       <a href={workUrl} className={styles.allProjectsButton}>
                           Browse all my work
                       </a>
-                      <div className={styles.separator}/>
+                      <div className={styles.separator} id={'contact'}/>
                       <h1 className={styles.secondaryHeader} >Contact</h1>
                       <p>Ill write something here to make the person contact me</p>
                   </div>
@@ -80,6 +80,38 @@ export default function Home() {
                           </a>
                       </div>
                       <div className={styles.rightMenuHeader}>
+                          <h2>Skills</h2>
+                      </div>
+                      <div className={styles.skillsContainer}>
+                          <div className={styles.skillItem}>
+                            Django
+                          </div>
+                          <div className={styles.skillItem}>
+                              DjangoRestFramework
+                          </div>
+                          <div className={styles.skillItem}>
+                              SQL / NoSQL
+                          </div>
+                          <div className={styles.skillItem}>
+                              React
+                          </div>
+                          <div className={styles.skillItem}>
+                              Next.js
+                          </div>
+                          <div className={styles.skillItem}>
+                              AWS
+                          </div>
+                          <div className={styles.skillItem}>
+                              Tests
+                          </div>
+                          <div className={styles.skillItem}>
+                              Docker
+                          </div>
+                          <div className={styles.skillItem}>
+                              CI/CD
+                          </div>
+                      </div>
+                      <div className={styles.rightMenuHeader} style={{marginTop: '40px'}}>
                           <h2>Education</h2>
                       </div>
                       <div className={styles.rightMenuText}>

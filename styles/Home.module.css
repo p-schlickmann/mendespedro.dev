@@ -140,6 +140,22 @@
   text-decoration: underline;
 }
 
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 8%;
+  row-gap: 10px;
+  column-gap: 5px;
+}
+
+.skillItem {
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  padding: 0.1em 0.3em;
+}
+
 @media (max-width: 768px) {
   .right {
     padding: 0 10px;

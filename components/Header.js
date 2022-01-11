@@ -1,8 +1,13 @@
-import styles from '../styles/Header.module.css'
+import {useEffect, useRef, useState} from "react";
+
+import {useRouter} from "next/router";
+import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBars} from "@fortawesome/free-solid-svg-icons";
-import {useEffect, useRef, useState} from "react";
-import {useRouter} from "next/router";
+
+import styles from '../styles/Header.module.css'
+
+
 
 const Header = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -44,10 +49,9 @@ const Header = () => {
                     <FontAwesomeIcon icon={faBars} color={'white'} className={styles.menuIcon}/>
                 </div>
                 <div className={styles.buttonsContainer}>
-                    <a href={'#about'}>ABOUT</a>
-                    <a href={'#work'}>WORK</a>
-                    <a href={'#projects'}>PROJECTS</a>
-                    <a href={'#contact'}>CONTACT</a>
+                    <Link href={'/work'}><a target={'_blank'}>WORK</a></Link>
+                    <a href={'/#about'}>ABOUT</a>
+                    <a href={'/#contact'}>CONTACT</a>
                 </div>
             </div>
             <div ref={wrapperRef} style={{display: isMobileMenuOpen ? 'initial' : 'none'}} className={styles.mobileMenu}>
