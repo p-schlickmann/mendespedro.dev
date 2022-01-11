@@ -43,3 +43,116 @@
   border-radius: 5px;
   font-size: 18px;
 }
+
+.secondaryContainer {
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", "Hoefler Text", Georgia, "Lucida Bright", Cambria, Times, "Times New Roman", serif;
+  font-size: 18px;
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+}
+
+.secondaryHeader {
+  font-size: 32px;
+  margin: 40px 0 30px;
+}
+
+.projects {
+  max-width: 1400px;
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.projectItem {
+  background: var(--shape);
+  border-radius: 5px;
+  min-width: 250px;
+  min-height: 250px;
+}
+
+.allProjectsButton {
+  font-family: Roboto, serif;
+  background: none;
+  border-radius: 5px;
+  color: var(--text-complement);
+  border: 1px solid var(--border);
+  margin: 20px auto 60px;
+  max-width: 400px;
+  display: block;
+  padding: 1em 1.5em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.allProjectsButton:hover {
+  border-color: var(--green);
+  color: var(--green);
+}
+
+.separator {
+  border-bottom: 1px solid var(--border);
+}
+
+.left {
+  width: 65%;
+  padding-left: 4.16%;
+}
+
+.right {
+  font-family: RobotoLight, serif;
+  font-size: 15px;
+  width: 32%;
+  background: var(--shape);
+}
+
+.socials {
+  margin: 45px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.socials a {
+
+}
+
+.rightMenuHeader {
+  margin: 0 10%
+}
+
+.rightMenuHeader h2 {
+  font-size: 20px;
+}
+
+.rightMenuText {
+  margin: 0 10%;
+  border-top: 1px solid var(--border)
+}
+
+.rightMenuText > p > a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .right {
+    padding: 0 10px;
+    width: 100%
+  }
+  .left {
+    width: 100%;
+    padding-right: 4.16%;
+  }
+  .secondaryContainer {
+    flex-direction: column;
+  }
+  .rightMenuHeader, .rightMenuText {
+    margin: 0 10px
+  }
+}

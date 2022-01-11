@@ -24,7 +24,7 @@ const Footer = () => {
                 </div>
                 <div className={styles.copyrightContainer}>
                     <span className={styles.copyright}>
-                        © 2005-2022 <Link href={'/'}><a>Mendes Pedro</a></Link>.
+                        © 2022 <Link href={'/'}><a>Mendes Pedro</a></Link>.
                         This website was intentionally copied from the
                         original <a href={'https://www.djangoproject.com/'}>Django website.</a>
                     </span>
