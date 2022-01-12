@@ -71,4 +71,37 @@ h1, h2, h3, h4, h5, h6 {
   font-family: RobotoLight, serif;
 }
 
+.link {
+  font-family: Roboto, serif;
+  color: var(--green)
+}
+
+main {
+  min-height: 100vh;
+}
+
+.left {
+  width: 65%;
+  padding-left: 4.16%;
+}
+
+.right {
+  font-family: RobotoLight, serif;
+  font-size: 15px;
+  width: 32%;
+  background: var(--shape);
+}
+
+@media (max-width: 768px) {
+  .right {
+    padding: 0 10px;
+    width: 100%
+  }
+
+  .left {
+    width: 100%;
+    padding-right: 4.16%;
+  }
+}
+
 

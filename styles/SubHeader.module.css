@@ -1,0 +1,25 @@
+.container {
+    background-color: var(--green-light);
+    margin: 0 auto;
+    padding: 0 4.16%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container h1 {
+    font-family: RobotoLight, serif;
+    color: var(--green-light-complement);
+}
+
+.input {
+    padding: 13px;
+    width: 40%;
+    border: 1px solid var(--border);
+    cursor: auto;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+    max-width: 400px;
+}

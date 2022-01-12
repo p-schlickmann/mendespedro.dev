@@ -1,5 +1,3 @@
-import Head from 'next/head'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faGithub, faLinkedin, faStackOverflow} from "@fortawesome/free-brands-svg-icons";
 
@@ -9,7 +7,7 @@ import Footer from "../components/Footer";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import {
     djangoRepoUrl,
-    emailUrl,
+    emailUrl, getWorkUrl,
     githubUrl,
     harvardUrl,
     linkedinUrl, reactAutocomplete,
@@ -17,17 +15,19 @@ import {
     ufscUrl,
     wizardUrl, workUrl
 } from "../urls";
+import HtmlHead from "../components/HtmlHead";
+import {useRouter} from "next/router";
+import Socials from "../components/Socials";
 
 export default function Home() {
-  return (
+
+    const router = useRouter()
+
+    return (
       <div className={styles.container}>
-          <Head>
-        <title>Mendes Pedro</title>
-        <meta name="description" content="The web developer for perfectionists with deadlines." />
-        <link rel="icon" href="/favicon.png" />
-      </Head>
+          <HtmlHead/>
           <Header/>
-          <main className={styles.main}>
+          <main>
               <div className={styles.copyBanner}>
                   <p className={styles.bannerText}>
                       <em>
@@ -50,11 +50,23 @@ export default function Home() {
                           software engineer in such little time, pure passion.
                       </p>
                       <div className={styles.projects}>
-                          <div className={styles.projectItem}>
-
+                          <div onClick={() => router.push(getWorkUrl('travelstation'))}>
+                              <div className={styles.imageContainer}>
+                                  <img alt={'travelstation img'} src={'/travelstation.png'} />
+                              </div>
+                              <div className={styles.projectNameContainer}>
+                                  <span>Travel Station</span>
+                                  <span>Software Engineer</span>
+                              </div>
                           </div>
-                          <div className={styles.projectItem}>
-
+                          <div onClick={() => router.push(getWorkUrl('eadguru'))}>
+                              <div className={styles.imageContainer}>
+                                  <img alt={'eadguru img'} src={'/eadguru.png'} />
+                              </div>
+                              <div className={styles.projectNameContainer}>
+                                  <span>EadGuru</span>
+                                  <span>Fullstack Developer</span>
+                              </div>
                           </div>
                       </div>
                       <a href={workUrl} className={styles.allProjectsButton}>
@@ -62,23 +74,10 @@ export default function Home() {
                       </a>
                       <div className={styles.separator} id={'contact'}/>
                       <h1 className={styles.secondaryHeader} >Contact</h1>
-                      <p>Ill write something here to make the person contact me</p>
+                      <p><a className={'link'} href={emailUrl} target={'_blank'}>contact@mendespedro.dev</a></p>
                   </div>
                   <div className={styles.right}>
-                      <div className={styles.socials}>
-                          <a target={'_blank'} href={linkedinUrl}>
-                              <FontAwesomeIcon color={'#44B78B'} size={'lg'} icon={faLinkedin} />
-                          </a>
-                          <a target={'_blank'} href={githubUrl}>
-                              <FontAwesomeIcon color={'#44B78B'} size={'lg'} icon={faGithub}/>
-                          </a>
-                          <a target={'_blank'} href={stackoverflowUrl}>
-                              <FontAwesomeIcon color={'#44B78B'} size={'lg'} icon={faStackOverflow}/>
-                          </a>
-                          <a target={'_blank'} href={emailUrl}>
-                              <FontAwesomeIcon color={'#44B78B'} size={'lg'} icon={faEnvelope}/>
-                          </a>
-                      </div>
+                      <Socials/>
                       <div className={styles.rightMenuHeader}>
                           <h2>Skills</h2>
                       </div>
@@ -138,7 +137,6 @@ export default function Home() {
                           <p>2020</p>
                       </div>
                   </div>
-
               </div>
           </main>
           <Footer/>

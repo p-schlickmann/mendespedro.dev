@@ -1,0 +1,33 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.rightMenuHeader {
+    margin: 0 10%
+}
+
+.rightMenuHeader h2 {
+    font-size: 20px;
+}
+
+.rightMenuText {
+    margin: 0 10%;
+    border-top: 1px solid var(--border)
+}
+
+.rightMenuText > p {
+    font-weight: bold;
+}
+
+.rightMenuText > p > a:hover {
+    text-decoration: underline;
+}
+
+
+.spanComplementary {
+    font-size: 14px;
+    display: block;
+    margin: 20px 0;
+}

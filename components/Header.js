@@ -9,7 +9,7 @@ import styles from '../styles/Header.module.css'
 
 
 
-const Header = () => {
+const Header = ({workPageTargetShouldNotBeBlank}) => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
     const wrapperRef = useRef()
     const triggerRef = useRef()
@@ -49,7 +49,9 @@ const Header = () => {
                     <FontAwesomeIcon icon={faBars} color={'white'} className={styles.menuIcon}/>
                 </div>
                 <div className={styles.buttonsContainer}>
-                    <Link href={'/work'}><a target={'_blank'}>WORK</a></Link>
+                    <Link href={'/work'}>
+                        <a target={workPageTargetShouldNotBeBlank ? '_self' : '_blank'}>WORK</a>
+                    </Link>
                     <a href={'/#about'}>ABOUT</a>
                     <a href={'/#contact'}>CONTACT</a>
                 </div>

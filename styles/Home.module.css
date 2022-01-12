@@ -1,7 +1,3 @@
-.main {
-  min-height: 100vh;
-}
-
 .copyBanner {
   font-family: RobotoLight, serif;
   font-weight: normal;
@@ -70,11 +66,32 @@
   margin-bottom: 20px;
 }
 
-.projectItem {
+.projects > div {
   background: var(--shape);
   border-radius: 5px;
   min-width: 250px;
   min-height: 250px;
+}
+
+.projects > div:hover {
+  border: 1px solid var(--green);
+  cursor: pointer;
+}
+
+.imageContainer {
+  height: 67%;
+}
+
+.imageContainer > img {
+  height: 100%;
+  width: 100%;
+}
+
+.projectNameContainer {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .allProjectsButton {
@@ -110,17 +127,6 @@
   font-size: 15px;
   width: 32%;
   background: var(--shape);
-}
-
-.socials {
-  margin: 45px auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.socials a {
-
 }
 
 .rightMenuHeader {
