@@ -39,9 +39,10 @@
     margin-bottom: 15px;
 }
 
+.experienceContainer {
+    font-family: RobotoLight, serif;
+}
 
-.spanComplementary {
-    font-size: 14px;
-    display: block;
-    margin: 20px 0;
+.experienceContainer h2, .experienceContainer h3 {
+    color: var(--text)
 }
