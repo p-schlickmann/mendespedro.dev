@@ -28,34 +28,85 @@ const work = () => {
                     <Socials/>
                     <div className={styles.rightMenuHeader}>
                         <h2>
-                            Work history
+                            Side projects
                         </h2>
                     </div>
                     <div className={styles.rightMenuText}>
-                        <p>Software Engineer | <a href={ufscUrl} target={'_blank'}>Travel Station</a></p>
-                        <span>
-                            Responsible for everything related to the technological aspect, being able to really
-                            test my skills and learn from my mistakes. Where I could decide the best solution for
-                            the given problem, and be held responsible for the consequences, good or bad ones.
-                        </span>
-                        <span className={styles.spanComplementary}>Mar 2021 - Present · 11mos</span>
+                        <p><a style={{fontWeight: 'bold', fontSize: '16px'}} href={ufscUrl} target={'_blank'}>mendespedro.dev</a></p>
+                        <p>
+                            My portifolio website (this website). I used React.js to rebuild Django's original website.
+                            I had a lot of fun and improved my CSS skills.
+                        </p>
+                        <div className={styles.skillsContainer}>
+                            <div className={styles.skillItem}>
+                                Javascript
+                            </div>
+                            <div className={styles.skillItem}>
+                                React
+                            </div>
+                            <div className={styles.skillItem}>
+                                Next.js
+                            </div>
+                            <div className={styles.skillItem}>
+                                HTML
+                            </div>
+                            <div className={styles.skillItem}>
+                                CSS
+                            </div>
+                            <div className={styles.skillItem}>
+                                Git
+                            </div>
+                        </div>
+
+                        {/*<span className={styles.spanComplementary}>Out 2020 - Mar 2021 · 6mos</span>*/}
                     </div>
                     <div className={styles.rightMenuText}>
-                        <p>Fullstack Developer | <a href={ufscUrl} target={'_blank'}>EadGuru</a></p>
-                        <span>
-                            Responsible for delivering new tested features to the platform, implementing
-                            unit/integration tests to the most critical part of the codebase and also
-                            composing docker files to automate the configuration process of the development environment.
-                        </span>
-                        <span className={styles.spanComplementary}>Apr 2021 - May 2021 · 2mos</span>
+                        <p><a style={{fontWeight: 'bold', fontSize: '16px'}} href={'/'} target={'_blank'}>WhatsApp Invisibility Cape</a></p>
+                        <p>
+                            Chrome Extension to be invisible on Whats App Web! It works by intercepting certain types of websockets.
+                        </p>
+                        <div className={styles.skillsContainer}>
+                            <div className={styles.skillItem}>
+                                Javascript
+                            </div>
+                            <div className={styles.skillItem}>
+                                HTML
+                            </div>
+                            <div className={styles.skillItem}>
+                                CSS
+                            </div>
+                            <div className={styles.skillItem}>
+                                Git
+                            </div>
+                        </div>
                     </div>
                     <div className={styles.rightMenuText}>
-                        <p>Web Development Internship | <a href={ufscUrl} target={'_blank'}>EadGuru</a></p>
-                        <span>
-                            During this time I learned software development best practices, concepts of clean
-                            code, SCRUM and the importance of an intuitive user interface.
-                        </span>
-                        <span className={styles.spanComplementary}>Out 2020 - Mar 2021 · 6mos</span>
+                        <p><a style={{fontWeight: 'bold', fontSize: '16px'}} href={'/'} target={'_blank'}>Streaming Platform</a></p>
+                        <p>
+                            Features: authentication, sign-up, filter stream by category, follow or subscribe to a streamer,
+                            live chat, profile management, password change and many others!
+                        </p>
+                        <div className={styles.skillsContainer}>
+                            <div className={styles.skillItem}>
+                                Django
+                            </div>
+                            <div className={styles.skillItem}>
+                                DjangoRestFramework
+                            </div>
+                            <div className={styles.skillItem}>
+                                React
+                            </div>
+                            <div className={styles.skillItem}>
+                                CSS
+                            </div>
+                            <div className={styles.skillItem}>
+                                HTML
+                            </div>
+                            <div className={styles.skillItem}>
+                                Git
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </main>
