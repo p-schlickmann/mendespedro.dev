@@ -31,13 +31,13 @@ export default function Home() {
               <div className={styles.copyBanner}>
                   <p className={styles.bannerText}>
                       <em>
-                          {/*My name is Pedro Mendes and I build things for the web, with Django.*/}
-                          My name is Pedro Mendes and this website is under development.
+                          My name is Pedro Mendes and I build things for the web, with Django.
                       </em>
                   </p>
                   <p>
-                      <a href={'#about'} className={styles.bannerButton}>Ok I'll check in later</a>
-                      {/*See my other top skills*/}
+                      <a href={'#about'} className={styles.bannerButton}>
+                          See my other top skills
+                      </a>
                   </p>
               </div>
               <div className={styles.secondaryContainer} id={'about'}>

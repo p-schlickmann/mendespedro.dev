@@ -1,4 +1,4 @@
-const travelstation = () => {
+const Travelstation = () => {
     return (
         <div>
 
@@ -6,4 +6,4 @@ const travelstation = () => {
     )
 }
 
-export default travelstation
+export default Travelstation

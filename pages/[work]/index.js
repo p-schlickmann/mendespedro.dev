@@ -11,7 +11,7 @@ import {faGithub, faLinkedin, faStackOverflow} from "@fortawesome/free-brands-sv
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import Socials from "../../components/Socials";
 
-const work = () => {
+const Work = () => {
 
     const [search, setSearch] = useState('')
 
@@ -115,4 +115,4 @@ const work = () => {
     )
 }
 
-export default work
+export default Work
