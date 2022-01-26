@@ -52,7 +52,7 @@ export default function Home() {
                           software engineer in such little time, pure passion.
                       </p>
                       <div className={styles.projects}>
-                          <div onClick={() => router.push(getWorkUrl('travelstation'))}>
+                          <div onClick={() => router.push(workUrl)}>
                               <div className={styles.imageContainer}>
                                   <img alt={'travelstation img'} src={'/travelstation.png'} />
                               </div>
@@ -61,7 +61,7 @@ export default function Home() {
                                   <span>Software Engineer</span>
                               </div>
                           </div>
-                          <div onClick={() => router.push(getWorkUrl('eadguru'))}>
+                          <div onClick={() => router.push(workUrl)}>
                               <div className={styles.imageContainer}>
                                   <img alt={'eadguru img'} src={'/eadguru.png'} />
                               </div>
