@@ -45,27 +45,27 @@ const Header = ({workPageTargetShouldNotBeBlank}) => {
                     The web developer for <br/>perfectionists with deadlines.
                 </span>
                 </div>
-                <div ref={triggerRef} onClick={() => setMobileMenuOpen(!isMobileMenuOpen)} className={styles.menuButtonContainer}>
-                    <FontAwesomeIcon icon={faBars} color={'white'} className={styles.menuIcon}/>
-                </div>
-                <div className={styles.buttonsContainer}>
-                    <Link href={'/work'}>
-                        <a target={workPageTargetShouldNotBeBlank ? '_self' : '_blank'}>WORK</a>
-                    </Link>
-                    <a href={'/#about'}>ABOUT</a>
-                    <a href={'/#contact'}>CONTACT</a>
-                </div>
+                {/*<div ref={triggerRef} onClick={() => setMobileMenuOpen(!isMobileMenuOpen)} className={styles.menuButtonContainer}>*/}
+                {/*    <FontAwesomeIcon icon={faBars} color={'white'} className={styles.menuIcon}/>*/}
+                {/*</div>*/}
+                {/*<div className={styles.buttonsContainer}>*/}
+                {/*    <Link href={'/work'}>*/}
+                {/*        <a target={workPageTargetShouldNotBeBlank ? '_self' : '_blank'}>WORK</a>*/}
+                {/*    </Link>*/}
+                {/*    <a href={'/#about'}>ABOUT</a>*/}
+                {/*    <a href={'/#contact'}>CONTACT</a>*/}
+                {/*</div>*/}
             </div>
             <div ref={wrapperRef} style={{display: isMobileMenuOpen ? 'initial' : 'none'}} className={styles.mobileMenu}>
-                <div onClick={() => router.push('/work')} className={styles.mobileMenuItem} style={{marginTop: '20px'}}>
-                    <a className={styles.mobileMenuText}>WORK</a>
-                </div>
-                <div onClick={() => router.push('/#about')} className={styles.mobileMenuItem}>
-                    <a className={styles.mobileMenuText}>ABOUT</a>
-                </div>
-                <div onClick={() => router.push('/#contact')}  className={styles.mobileMenuItem} style={{paddingBottom: 9}}>
-                    <a className={styles.mobileMenuText}>CONTACT</a>
-                </div>
+                {/*<div onClick={() => router.push('/work')} className={styles.mobileMenuItem} style={{marginTop: '20px'}}>*/}
+                {/*    <a className={styles.mobileMenuText}>WORK</a>*/}
+                {/*</div>*/}
+                {/*<div onClick={() => router.push('/#about')} className={styles.mobileMenuItem}>*/}
+                {/*    <a className={styles.mobileMenuText}>ABOUT</a>*/}
+                {/*</div>*/}
+                {/*<div onClick={() => router.push('/#contact')}  className={styles.mobileMenuItem} style={{paddingBottom: 9}}>*/}
+                {/*    <a className={styles.mobileMenuText}>CONTACT</a>*/}
+                {/*</div>*/}
             </div>
         </div>
         )
