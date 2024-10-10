@@ -14,8 +14,6 @@ const Header = ({workPageTargetShouldNotBeBlank}) => {
     const wrapperRef = useRef()
     const triggerRef = useRef()
 
-    const router = useRouter()
-
     useEffect(() => {
         function handleClickOutside(event) {
             if (triggerRef.current && triggerRef.current.contains(event.target)) {
@@ -39,10 +37,10 @@ const Header = ({workPageTargetShouldNotBeBlank}) => {
             <div className={styles.desktopContainer}>
                 <div className={styles.logoContainer}>
                     <a href={'/'} className={'logoText'}>
-                        pedro
+                        psm
                     </a>
                     <span className={styles.logoComplement}>
-                    The web developer for <br/>perfectionists with deadlines.
+                    Software Engineers for <br/>perfectionists with deadlines.
                 </span>
                 </div>
                 {/*<div ref={triggerRef} onClick={() => setMobileMenuOpen(!isMobileMenuOpen)} className={styles.menuButtonContainer}>*/}

@@ -7,8 +7,8 @@ const Footer = () => {
             <div className={styles.container}>
                 <div className={styles.credits}>
                     <Link href={'/'}>
-                        <a  className={'logoText'}>
-                            pedro
+                        <a className={'logoText'}>
+                            psm
                         </a>
                     </Link>
                     <div>
@@ -24,7 +24,7 @@ const Footer = () => {
                 </div>
                 <div className={styles.copyrightContainer}>
                     <span className={styles.copyright}>
-                        © {new Date().getFullYear()} <Link href={'/'}><a>Mendes Pedro</a></Link>.
+                        © {new Date().getFullYear()} <Link href={'/'}><a>PSM Technologies</a></Link>.
                         This website was intentionally copied from the
                         original <a target={'_blank'}  href={'https://www.djangoproject.com/'}>Django website.</a>
                     </span>
