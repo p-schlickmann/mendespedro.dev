@@ -67,7 +67,6 @@ export default function Home() {
                       <p><a className={'link'} href={emailUrl} target={'_blank'}>contact@mendespedro.dev</a></p>
                   </div>
                   <div className={styles.right}>
-                      <Socials/>
                       <div className={styles.rightMenuHeader}>
                           <h2>Technologies</h2>
                       </div>
